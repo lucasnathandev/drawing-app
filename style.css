@@ -16,9 +16,6 @@ body {
 }
 
 canvas {
-  max-width: 80vw;
-  width: 80vh;
-  height: 80vh;
   border: 2px solid steelblue;
 }
 
@@ -26,8 +23,8 @@ canvas {
   background-color: steelblue;
   border: 1px solid slateblue;
   display: flex;
-  width: 80vh;
-  max-width: 80vw;
+  width: 504px;
+  max-width: 100vw;
   padding: 1rem;
 }
 
@@ -51,6 +48,10 @@ canvas {
 
 .toolbox > *:active {
   transform: scale(0.98);
+}
+
+.toolbox > *:disabled:active {
+  transform: scale(1);
 }
 
 .toolbox > *:last-child {

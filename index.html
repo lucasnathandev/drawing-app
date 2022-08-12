@@ -9,11 +9,19 @@
     <title>Drawing App</title>
   </head>
   <body>
-    <canvas id="canvas"></canvas>
+    <canvas id="canvas" width="500" height="500"></canvas>
     <div class="toolbox">
-      <button id="decrease">-</button>
-      <span id="size">20</span>
-      <button id="increase">+</button>
+      <input
+        type="range"
+        name="size"
+        id="size-range"
+        min="1"
+        max="50"
+        step="1"
+        value="10"
+      />
+      <span id="size">10</span>
+
       <input type="color" id="color" />
       <button id="clear">X</button>
     </div>
